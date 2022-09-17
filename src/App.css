@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Hind:wght@300&display=swap');
+
+.game-box {
+  background-color: rgba(20, 92, 191, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#hidden_form {
+ display:none;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form input {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 1.3rem;
+}
+
+.form input::placeholder {
+  padding: 1.2rem;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.form button {
+  width: 40%;
+  margin: 10px auto;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(22, 43, 61);
+  box-shadow: 2px 2px 8px rgba(186, 186, 186, 0.3);
+  font-size: 1.3rem;
+  color: rgba(249, 236, 228, 1);
+  text-shadow: 2px 2px 8px rgba(249, 236, 228, 0.7);
+  font-family: 'Gemunu Libre', sans-serif;
+  text-transform: uppercase;
+}
+
+.form button:hover {
+  background-color: #F9ECE4;
+  cursor: pointer;
+  color: black;
+  text-shadow: 2px 2px 8px grey; 
+  box-shadow: 2px 2px 8px rgba(22, 43, 61);
+}
+
+.under_container {
+  width: 70%;
+  max-width: 100%;
+  background-image: linear-gradient(155deg, rgba(26, 109, 237, .4), rgba(204, 215, 190, .3), rgba(81, 237, 26, .3));
+  border-radius: 10px;
+  height: 400px;
+}
