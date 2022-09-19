@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+
+.under-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    max-width: 100%;
+    margin: 50px;
+    background-color: linear-gradient(#1A6DED, #CCD7BE, #51ED1A);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.final-text {
+    text-align: center;
+    background-image: linear-gradient(rgba(26, 109, 237, 1), rgba(56, 237, 26, 0.8));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255, 255, 255, 0);
+    text-shadow: 2px 2px 4px rgba(255, 256, 258, 0.150);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.congrats,
+p,
+span {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.btn-restart {
+    width: 40%;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(22, 43, 61);
+    box-shadow: 2px 2px 8px rgba(186, 186, 186, 0.3);
+    font-size: 1.3rem;
+    color: rgba(249, 236, 228, 1);
+    text-shadow: 2px 2px 8px rgba(249, 236, 228, 0.7);
+    font-family: 'Gemunu Libre', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-restart:hover {
+    background-color: #F9ECE4;
+    cursor: pointer;
+    color: black;
+    text-shadow: 2px 2px 8px grey;
+    box-shadow: 2px 2px 8px rgba(22, 43, 61);
+}

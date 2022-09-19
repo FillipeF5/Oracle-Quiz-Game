@@ -6,7 +6,7 @@ const appName = 'Oracle Quiz Game'
 export default function Header() {
     return(
         <header>
-            <h2>{appName}</h2>
+            <h2 className="gradient-text">{appName}</h2>
         </header>
     )
 }
