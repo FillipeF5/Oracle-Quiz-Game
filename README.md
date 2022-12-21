@@ -2,8 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# [Figma Design]
-(https://www.figma.com/file/1AymQIa8Os3KMC2Vy3jChG/Oracle-Quiz-Game?node-id=0%3A1&t=N30k3gjukAz1MAPM-1)
+## [Figma Design](https://www.figma.com/file/1AymQIa8Os3KMC2Vy3jChG/Oracle-Quiz-Game?node-id=0%3A1&t=N30k3gjukAz1MAPM-1)
 
 ## Available Scripts
 
