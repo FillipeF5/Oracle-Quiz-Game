@@ -3,16 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Figma Design 
-[click here to view](https://www.figma.com/file/1AymQIa8Os3KMC2Vy3jChG/Oracle-Quiz-Game?node-id=0%3A1&t=N30k3gjukAz1MAPM-1)
+[click here to view](https://www.figma.com/file/LKE3mqrGb2PQHvLGEWRqVS/Curso-UI%2FUX?t=8z0y1972mIkP2bAn-0)
 
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-
+## Prototype
+Prototype link for Apple iPhone 14, but also possible to use the browser.
+[click here to run](https://www.figma.com/proto/LKE3mqrGb2PQHvLGEWRqVS/Curso-UI%2FUX?node-id=0%3A1)
