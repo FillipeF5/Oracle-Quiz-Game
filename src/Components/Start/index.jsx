@@ -20,6 +20,7 @@ export default function Start({
             setGame(true)
             if (name === "ketryn") {
                 setShowPhrase('final-text')
+                setName(name)
             }
         } else { setInputAnimation('animate__animated animate__tada') }
         e.preventDefault()

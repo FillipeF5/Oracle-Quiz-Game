@@ -8,8 +8,8 @@ export default function Final({
     setFinal,
     name,
     setName,
-    questions,
-    showPhrase
+    showPhrase,
+    statement
 }) {
     
 
@@ -23,12 +23,12 @@ export default function Final({
 
     return (
         <div className="under-container">
-            <h3 className="congrats">Congrats</h3>
+            <h3 className="congrats">Congrats !!!</h3>
 
             <h2 className={showPhrase}>Noivamento de {name} & Lipe</h2>
 
 
-            <p>Your final score: <span>{score}</span> / {questions.length} </p>
+            <p>Final score: <span>{score}</span> / {statement.length} </p>
             <button
                 className='btn-restart'
                 onClick={handleRestart}

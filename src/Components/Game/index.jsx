@@ -1,29 +1,38 @@
 import React, { useState } from 'react'
-import 'animate.css'
 import './style.css'
+
 
 export default function Game({
   score,
   setScore,
   setGame,
   setFinal,
-  questions
+  questions,
+  statement
 }) {
+
   const [currentQuestion, setCurrentQuestion] = useState(0)
+  const [currentAnswers, setCurrentAnswers] = useState(1)
   const [scoreAnimation, setScoreAnimation] = useState('')
 
-  function handleAnswer(value) {
+  const answers = questions.answers
+  const filtered = answers.filter((item) => {
+    return item.identify === currentAnswers;
+  })
+
+  function handleAnswer(isCorrect) {
     setTimeout(() => {
 
-       if (currentQuestion + 1 < questions.length) {
-        if (value) {
+      if (currentQuestion + 1 < statement.length) {
+        if (isCorrect) {
           setScoreAnimation('animate__animated animate__shakeY')
           setScore(score + 1)
         } else { setScoreAnimation('animate__animated animate__shakeX') }
 
         setCurrentQuestion(currentQuestion + 1)
+        setCurrentAnswers(currentAnswers + 1)
       } else {
-        if (value) {
+        if (isCorrect) {
           setScoreAnimation('animate__animated animate__shakeY')
           setScore(score + 1)
         }
@@ -31,17 +40,18 @@ export default function Game({
         setGame(false)
         setFinal(true)
       }
-    }, 1000);
+    }, 500);
   }
+
 
   return (
 
     <>
 
       <div className="up-container">
-        <h4 className='opacity-text'> Question {currentQuestion + 1} / {questions.length} </h4>
+        <h4 className='opacity-text'> Question {currentQuestion + 1} / {statement.length} </h4>
         <p className="question-text">
-          {questions[currentQuestion].questionText}
+          {statement[currentQuestion].questionText}
         </p>
       </div>
 
@@ -49,18 +59,18 @@ export default function Game({
       <div className="under-container">
 
         <div id='answers'>
-          {questions[currentQuestion].answerOptions.map((answerOption, index) => {
+          {filtered.map((item) => {
             return (
               <button
-                onClick={() => handleAnswer(answerOption.value)}
-                key={index}
+                onClick={() => handleAnswer(item.isCorrect)}
+                key={item}
                 id='btn'
               >
-                {answerOption.option}
+                {item.answerOption}
               </button>
             )
           })}
-          <p id="score" className={scoreAnimation}>score : {score}  / {questions.length} </p>
+          <p id="score" className={scoreAnimation}>score : {score}  / {statement.length} </p>
         </div>
 
 
